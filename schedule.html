@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Doctor Schedule | HealthCare+</title>
+
+<link rel="stylesheet" href="schedule.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>Schedule Management</h1>
+<br/>
+</div>
+
+<div class="card">
+
+<div class="section">
+
+<h3><i class="fa fa-calendar"></i> Select Date</h3>
+
+<input type="date" id="date">
+
+</div>
+
+<div class="section">
+
+<h3><i class="fa fa-clock"></i> Available Time</h3>
+
+<div class="slots">
+
+<div class="slot">09:00 AM</div>
+<div class="slot">10:00 AM</div>
+<div class="slot">11:00 AM</div>
+<div class="slot">02:00 PM</div>
+<div class="slot">03:00 PM</div>
+<div class="slot">04:00 PM</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h3><i class="fa fa-users"></i> Booking Limit</h3>
+
+<input type="number" id="limit" placeholder="e.g. 10 patients per day">
+
+</div>
+
+<button onclick="saveSchedule()">
+
+<i class="fa fa-save"></i> Save Schedule
+
+</button>
+
+</div>
+
+</div>
+
+<script src="schedule.js"></script>
+
+</body>
+</html>

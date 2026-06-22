@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Patient Management  | Admin Panel</title>
+
+<link rel="stylesheet" href="manage-patients.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>Patient Management</h1>
+
+</div>
+
+<div class="top-bar">
+<button class="add-btn" id="openModal">
+<i class="fa fa-plus"></i> Add Patient
+</button>
+</div>
+
+<div class="card">
+
+<table>
+<thead>
+<tr>
+<th>Patient</th>
+<th>Phone</th>
+<th>Email</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+</thead>
+
+<tbody id="tableBody">
+
+<tr>
+<td>John Doe</td>
+<td>+880 1712345678</td>
+<td>john@example.com</td>
+<td><span class="status active">active</span></td>
+<td>
+<button class="edit"><i class="fa fa-pen"></i></button>
+<button class="delete"><i class="fa fa-trash"></i></button>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="modal" id="modal">
+
+<div class="modal-box">
+
+<h2 id="modalTitle">Add Patient</h2>
+
+<input type="text" id="name" placeholder="Patient Name">
+<input type="text" id="phone" placeholder="Phone">
+<input type="email" id="email" placeholder="Email">
+
+<select id="status">
+<option value="active">Active</option>
+<option value="blocked">Blocked</option>
+</select>
+
+<div class="modal-actions">
+<button id="saveBtn">Save</button>
+<button id="closeModal">Cancel</button>
+</div>
+
+</div>
+
+</div>
+
+<script src="manage-patients.js"></script>
+
+</body>
+</html>

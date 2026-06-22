@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Patient Profile | HealthCare+</title>
+
+<link rel="stylesheet" href="patient-profile.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>Patient Profile</h1>
+<br/>
+</div>
+
+<div class="card">
+
+<div class="profile-top">
+
+<div class="avatar">
+<i class="fa fa-user"></i>
+</div>
+
+<div class="profile-info">
+<h2>Sadia</h2>
+<p>Patient Account</p>
+</div>
+
+</div>
+
+<div class="form-grid">
+
+<div class="field">
+<label>Name</label>
+<input type="text" id="name" value="Sadia">
+</div>
+
+<div class="field">
+<label>Phone</label>
+<input type="text" id="phone" value="+880123456789">
+</div>
+
+<div class="field">
+<label>Age</label>
+<input type="number" id="age" value="20">
+</div>
+
+<div class="field">
+<label>Gender</label>
+<select id="gender">
+<option>Female</option>
+<option>Male</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="field full">
+<label>Address</label>
+<input type="text" id="address" value="Sylhet, Bangladesh">
+</div>
+
+<div class="field full">
+<label>Medical History</label>
+<textarea id="history">No major diseases</textarea>
+</div>
+
+</div>
+
+<button onclick="updateProfile()">
+Update Profile
+</button>
+
+</div>
+
+</div>
+
+<script src="patient-profile.js"></script>
+
+</body>
+</html>

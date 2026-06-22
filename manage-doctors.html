@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Doctor Management  | Admin Panel</title>
+
+<link rel="stylesheet" href="manage-doctors.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>Doctor Management </h1>
+
+</div>
+
+<div class="top-bar">
+<button class="add-btn" id="openModal">
+<i class="fa fa-plus"></i> Add Doctor
+</button>
+</div>
+
+<div class="card">
+
+<table>
+
+<thead>
+<tr>
+<th>Doctor</th>
+<th>Department</th>
+<th>Fee</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Dr. Sarah Ahmed</td>
+<td>Cardiology</td>
+<td>1000 BDT</td>
+<td><span class="status active">Active</span></td>
+<td class="actions">
+<button class="edit"><i class="fa fa-pen"></i></button>
+<button class="delete"><i class="fa fa-trash"></i></button>
+</td>
+</tr>
+
+<tr>
+<td>Dr. John Smith</td>
+<td>Neurology</td>
+<td>1200 BDT</td>
+<td><span class="status active">Active</span></td>
+<td class="actions">
+<button class="edit"><i class="fa fa-pen"></i></button>
+<button class="delete"><i class="fa fa-trash"></i></button>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="modal" id="modal">
+
+<div class="modal-box">
+
+<h2>Add Doctor</h2>
+
+<input type="text" id="name" placeholder="Doctor Name">
+<input type="text" id="department" placeholder="Department">
+<input type="text" id="fee" placeholder="Fee">
+
+<select id="status">
+<option value="active">Active</option>
+<option value="inactive">Inactive</option>
+</select>
+
+<div class="modal-actions">
+<button id="saveBtn">Save</button>
+<button id="closeModal">Cancel</button>
+</div>
+
+</div>
+
+</div>
+
+<script src="manage-doctors.js"></script>
+
+</body>
+</html>

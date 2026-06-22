@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Patient Records | Doctor Panel</title>
+
+<link rel="stylesheet" href="patient-records.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>Patient Records</h1>
+<br/>
+</div>
+
+<div class="card">
+
+<div class="search-box">
+
+<i class="fa fa-search"></i>
+
+<input type="text" id="search" placeholder="Search patient by name...">
+
+<button onclick="searchPatient()">Search</button>
+
+</div>
+
+<div class="section">
+
+<h3><i class="fa fa-file-medical"></i> Medical History</h3>
+
+<div class="history">
+<p><b>Name:</b> John Doe</p>
+<p><b>Age:</b> 35</p>
+<p><b>Condition:</b> Hypertension</p>
+<p><b>Last Visit:</b> 2026-06-10</p>
+</div>
+
+</div>
+
+<div class="section">
+
+<h3><i class="fa fa-notes-medical"></i> Doctor Notes</h3>
+
+<textarea id="notes" placeholder="Write medical notes here..."></textarea>
+
+</div>
+
+<button class="save" onclick="saveRecord()">
+
+<i class="fa fa-save"></i> Save Record
+
+</button>
+
+</div>
+
+</div>
+
+<script src="patient-records.js"></script>
+
+</body>
+</html>

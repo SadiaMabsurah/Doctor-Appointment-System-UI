@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Appointment Management  | Admin Panel</title>
+
+<link rel="stylesheet" href="manage-appointments.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+    <h1>Appointment Management</h1>
+    <p></p>
+</div>
+
+<div class="top-bar">
+    <button class="add-btn" id="openModal">
+        <i class="fa fa-plus"></i> Add Appointment
+    </button>
+</div>
+
+<div class="card">
+
+<table>
+<thead>
+<tr>
+    <th>Patient</th>
+    <th>Doctor</th>
+    <th>Date</th>
+    <th>Status</th>
+    <th>Actions</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+    <td>John Doe</td>
+    <td>Dr. Sarah Ahmed</td>
+    <td>2026-06-21</td>
+    <td><span class="status pending">Pending</span></td>
+    <td class="actions">
+        <button class="edit"><i class="fa fa-pen"></i></button>
+        <button class="delete"><i class="fa fa-trash"></i></button>
+    </td>
+</tr>
+
+<tr>
+    <td>Emma Wilson</td>
+    <td>Dr. John Smith</td>
+    <td>2026-06-22</td>
+    <td><span class="status confirmed">Confirmed</span></td>
+    <td class="actions">
+        <button class="edit"><i class="fa fa-pen"></i></button>
+        <button class="delete"><i class="fa fa-trash"></i></button>
+    </td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="modal" id="modal">
+
+<div class="modal-box">
+
+<h2 id="modalTitle">Add Appointment</h2>
+
+<input type="text" id="patient" placeholder="Patient Name">
+<input type="text" id="doctor" placeholder="Doctor Name">
+<input type="date" id="date">
+
+<select id="status">
+    <option value="pending">Pending</option>
+    <option value="confirmed">Confirmed</option>
+    <option value="completed">Completed</option>
+</select>
+
+<div class="modal-actions">
+    <button id="saveBtn">Save</button>
+    <button id="closeModal">Cancel</button>
+</div>
+
+</div>
+
+</div>
+
+<script src="manage-appointments.js"></script>
+
+</body>
+</html>

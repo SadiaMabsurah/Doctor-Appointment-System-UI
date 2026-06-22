@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Feedback | HealthCare+</title>
+
+<link rel="stylesheet" href="feedback.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>Patient Feedback</h1>
+<p>Share your experience with doctors and services</p>
+</div>
+
+<div class="card">
+
+<div class="section">
+<h3>Rating</h3>
+
+<div class="stars">
+<i class="fa fa-star" data-value="1"></i>
+<i class="fa fa-star" data-value="2"></i>
+<i class="fa fa-star" data-value="3"></i>
+<i class="fa fa-star" data-value="4"></i>
+<i class="fa fa-star" data-value="5"></i>
+</div>
+
+</div>
+
+<div class="section">
+<h3>Comment</h3>
+<textarea id="comment" placeholder="Write your feedback..."></textarea>
+</div>
+
+<button onclick="submitFeedback()">
+Submit Feedback
+</button>
+
+</div>
+
+</div>
+
+<script src="feedback.js"></script>
+
+</body>
+</html>

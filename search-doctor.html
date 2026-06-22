@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Search Doctor | HealthCare+</title>
+
+<link rel="stylesheet" href="search-doctor.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="header">
+<h1>Find Doctors</h1>
+<p>Search and book your preferred doctor easily</p>
+</div>
+
+<div class="filter-box">
+
+<input type="text" id="name" placeholder="Doctor Name">
+
+<select id="specialization">
+<option value="">Specialization</option>
+<option>Cardiologist</option>
+<option>Neurologist</option>
+<option>Dermatologist</option>
+<option>ENT</option>
+<option>Pediatrician</option>
+</select>
+
+<input type="number" id="fee" placeholder="Max Consultation Fee">
+
+<select id="availability">
+<option value="">Availability</option>
+<option>Morning</option>
+<option>Afternoon</option>
+<option>Evening</option>
+</select>
+
+<button onclick="searchDoctors()">Search</button>
+
+</div>
+
+<div class="doctor-container" id="doctorList">
+
+<div class="doctor-card" data-name="sarah" data-spec="Cardiologist" data-fee="30" data-time="Morning">
+
+<img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=400">
+
+<h3>Dr. Sarah Ahmed</h3>
+<p>Cardiologist</p>
+
+<div class="info">
+<span>10 Years Exp</span>
+<span>$30 Fee</span>
+<span>⭐ 4.9</span>
+<span>Morning</span>
+</div>
+
+<button>Book Now</button>
+
+</div>
+
+<div class="doctor-card" data-name="john" data-spec="Neurologist" data-fee="25" data-time="Evening">
+
+<img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400">
+
+<h3>Dr. John Smith</h3>
+<p>Neurologist</p>
+
+<div class="info">
+<span>8 Years Exp</span>
+<span>$25 Fee</span>
+<span>⭐ 4.8</span>
+<span>Evening</span>
+</div>
+
+<button>Book Now</button>
+
+</div>
+
+<div class="doctor-card" data-name="emily" data-spec="Dermatologist" data-fee="35" data-time="Afternoon">
+
+<img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400">
+
+<h3>Dr. Emily Wilson</h3>
+<p>Dermatologist</p>
+
+<div class="info">
+<span>12 Years Exp</span>
+<span>$35 Fee</span>
+<span>⭐ 5.0</span>
+<span>Afternoon</span>
+</div>
+
+<button>Book Now</button>
+
+</div>
+
+</div>
+
+<script src="search-doctor.js"></script>
+
+</body>
+</html>

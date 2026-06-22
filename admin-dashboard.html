@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | HealthCare+</title>
+
+<link rel="stylesheet" href="admin-dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="layout">
+
+<div class="sidebar">
+
+<h2 class="logo">
+<i class="fa fa-hospital"></i> Admin Panel
+</h2>
+
+<ul>
+<li class="active"><i class="fa fa-grid-2"></i> Dashboard</li>
+<li><i class="fa fa-user-doctor"></i> Doctors</li>
+<li><i class="fa fa-user"></i> Patients</li>
+<li><i class="fa fa-calendar"></i> Appointments</li>
+<li><i class="fa fa-sitemap"></i> Departments</li>
+<li><i class="fa fa-chart-line"></i> Reports</li>
+<li class="logout"><i class="fa fa-right-from-bracket"></i> Logout</li>
+</ul>
+
+</div>
+
+<div class="main">
+
+<div class="topbar">
+<h1>Admin Dashboard</h1>
+<p>System overview & analytics</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Doctors</h3>
+<p>120</p>
+<i class="fa fa-user-doctor"></i>
+</div>
+
+<div class="card">
+<h3>Patients</h3>
+<p>8,500</p>
+<i class="fa fa-users"></i>
+</div>
+
+<div class="card">
+<h3>Appointments</h3>
+<p>15,000</p>
+<i class="fa fa-calendar-check"></i>
+</div>
+
+<div class="card">
+<h3>Departments</h3>
+<p>18</p>
+<i class="fa fa-sitemap"></i>
+</div>
+
+<div class="card">
+<h3>Revenue</h3>
+<p>$45K</p>
+<i class="fa fa-dollar-sign"></i>
+</div>
+
+</div>
+
+<div class="analytics">
+
+<h2>Analytics Overview</h2>
+
+<div class="charts-grid">
+
+<div class="chart-box">
+<h3>Appointments Trend</h3>
+<canvas id="appointmentsChart"></canvas>
+</div>
+
+<div class="chart-box">
+<h3>Revenue Growth</h3>
+<canvas id="revenueChart"></canvas>
+</div>
+
+<div class="chart-box">
+<h3>Doctor vs Patient Ratio</h3>
+<canvas id="ratioChart"></canvas>
+</div>
+
+<div class="chart-box">
+<h3>Bed Occupancy Rate</h3>
+<canvas id="bedChart"></canvas>
+</div>
+
+</div>
+
+</div>
+
+<div class="activity">
+
+<h2>Recent Activity</h2>
+
+<div class="activity-list">
+
+<div class="item">
+<i class="fa fa-user-plus"></i>
+<p>New doctor registered - Dr. Smith</p>
+</div>
+
+<div class="item">
+<i class="fa fa-calendar-check"></i>
+<p>Appointment confirmed - John Doe</p>
+</div>
+
+<div class="item">
+<i class="fa fa-file-medical"></i>
+<p>Prescription created for Emma</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+new Chart(document.getElementById("appointmentsChart"), {
+  type: "line",
+  data: {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    datasets: [{
+      label: "Appointments",
+      data: [1200, 1500, 1700, 1600, 2000, 2400],
+      borderColor: "#0d6efd",
+      backgroundColor: "rgba(13,110,253,0.1)",
+      fill: true,
+      tension: 0.4
+    }]
+  }
+});
+
+new Chart(document.getElementById("revenueChart"), {
+  type: "bar",
+  data: {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    datasets: [{
+      label: "Revenue ($)",
+      data: [5000, 7000, 6500, 8000, 9000, 11000],
+      backgroundColor: "#198754"
+    }]
+  }
+});
+
+new Chart(document.getElementById("ratioChart"), {
+  type: "doughnut",
+  data: {
+    labels: ["Doctors", "Patients"],
+    datasets: [{
+      data: [120, 8500],
+      backgroundColor: ["#0d6efd", "#ffc107"]
+    }]
+  }
+});
+
+new Chart(document.getElementById("bedChart"), {
+  type: "pie",
+  data: {
+    labels: ["Occupied Beds", "Available Beds"],
+    datasets: [{
+      data: [320, 180],
+      backgroundColor: ["#dc3545", "#198754"]
+    }]
+  }
+});
+
+</script>
+
+</body>
+</html>

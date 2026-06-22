@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Appointment | HealthCare+</title>
+
+<link rel="stylesheet" href="book-appointment.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>Book Appointment</h1>
+
+<label>Choose Doctor</label>
+<select id="doctor">
+<option value="">Select Doctor</option>
+<option value="sarah">Dr. Sarah Ahmed (Cardiologist)</option>
+<option value="john">Dr. John Smith (Neurologist)</option>
+<option value="emily">Dr. Emily Wilson (Dermatologist)</option>
+</select>
+
+<label>Select Date</label>
+<input type="date" id="date">
+
+<label>Select Time Slot</label>
+
+<div class="slots">
+
+<div class="slot" data-time="10:00 AM">10:00 AM</div>
+<div class="slot" data-time="11:30 AM">11:30 AM</div>
+<div class="slot" data-time="02:00 PM">02:00 PM</div>
+<div class="slot" data-time="04:30 PM">04:30 PM</div>
+
+</div>
+
+<label>Reason for Visit</label>
+<textarea id="reason" placeholder="Write your symptoms or reason..."></textarea>
+
+<button onclick="bookAppointment()">
+Confirm Appointment
+</button>
+
+</div>
+
+</div>
+
+<script src="book-appointment.js"></script>
+
+</body>
+</html>

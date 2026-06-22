@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reports | Admin Panel</title>
+
+<link rel="stylesheet" href="reports.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <h1>Reports</h1>
+    <p>Hospital performance overview</p>
+  </div>
+
+  <div class="quick-info">
+    <div class="info-pill">🟢 System Online</div>
+    <div class="info-pill">📅 Updated Today</div>
+    <div class="info-pill">⏱ Sync: 2 min ago</div>
+    <div class="info-pill">⚡ Stable</div>
+  </div>
+
+  <div class="stats">
+
+    <div class="stat-card">
+      <h3>Patients</h3>
+      <p>8,500</p>
+      <i class="fa fa-users"></i>
+    </div>
+
+    <div class="stat-card">
+      <h3>Doctors</h3>
+      <p>120</p>
+      <i class="fa fa-user-doctor"></i>
+    </div>
+
+    <div class="stat-card">
+      <h3>Appointments</h3>
+      <p>1,240</p>
+      <i class="fa fa-calendar-check"></i>
+    </div>
+
+    <div class="stat-card">
+      <h3>Revenue</h3>
+      <p>$45K</p>
+      <i class="fa fa-dollar-sign"></i>
+    </div>
+
+  </div>
+
+  <div class="chart-box">
+    <h3>Appointments Per Month</h3>
+    <canvas id="appointmentsChart"></canvas>
+  </div>
+
+  <div class="chart-grid">
+
+    <div class="chart-box">
+      <h3>Popular Doctors</h3>
+      <canvas id="doctorsChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+      <h3>Department Distribution</h3>
+      <canvas id="departmentChart"></canvas>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="reports.js"></script>
+
+</body>
+</html>
